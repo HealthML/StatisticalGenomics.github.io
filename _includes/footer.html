@@ -15,8 +15,15 @@
             {% if site.email %}
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% endif %}
-            {% if site.google_scholar %}
-            <li><a href=https://scholar.google.com/citations?user={{site.google_scholar}}><img src="/assets/img/google_scholar.png" height="18" width="18" align="middle">&nbsp;Christoph Lippert</li>
+            {% if site.google_scholar.user %}
+            <li><a href=https://scholar.google.com/citations?user={{site.google_scholar.user}}><img src="/assets/img/google_scholar.png" height="17" width="17" align="middle">
+              {% if site.google_scholar.name %}
+                {{site.google_scholar.name}}
+              {% else %}
+                Google Scholar
+              {% endif %}
+             </a> 
+          </li>
               {% endif %}
           {% if site.github_username %}
           <li>
