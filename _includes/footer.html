@@ -3,13 +3,10 @@
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-3">
-        <ul class="contact-list">
-          <li>
-        <a class="footer-heading" href="https://www.mdc-berlin.de/bimsb"><img src="/assets/img/bimsb.png" vspace="5" hspace="5" align="middle" height="62" width="250"></a>
-        </li>
+      <div class="footer-col footer-col-1">
         
-        </ul>
+        <a class="footer-heading" href="https://www.mdc-berlin.de/bimsb"><img src="/assets/img/bimsb.png" vspace="5" hspace="5" align="middle" height="62" width="250"></a>
+        
       </div>
 <div>
       </div>
@@ -18,7 +15,9 @@
             {% if site.email %}
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% endif %}
-            <li><a href="https://scholar.google.com/citations?user=RVl8TE0AAAAJ"><img src="/assets/img/google_scholar_icon.jpg" align="middle">&nbsp;Christoph Lippert</li>
+            {% if site.google_scholar %}
+            <li><a href=https://scholar.google.com/citations?user={{site.google_scholar}}><img src="/assets/img/google_scholar.png" height="18" width="18" align="middle">&nbsp;Christoph Lippert</li>
+              {% endif %}
           {% if site.github_username %}
           <li>
             {% include icon-github.html username=site.github_username %}
@@ -33,10 +32,8 @@
         </ul>
       </div>
 
-      <div class="footer-col footer-col-2">
-        <ul class="contact-list">
+      <div class="footer-col footer-col-1">
         
-        </ul>
       </div>
 
     </div>
