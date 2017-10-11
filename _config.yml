@@ -14,7 +14,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Statistial Genomics
-email: Christoph.Lippert@MDC-Berlin.de
 description: >- # this means to ignore newlines until "baseurl:"
   The Statistial Genomics group develops machine learning and statistial methods for problems in genomics and computational biology.
 baseurl: "" # the subpath of your site, e.g. /blog
