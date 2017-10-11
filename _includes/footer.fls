@@ -1,0 +1,6 @@
+PWD /Users/clippert/Source/StatisticalGenomics/_includes
+INPUT /usr/local/texlive/2017/texmf.cnf
+INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/clippert/Source/StatisticalGenomics/_includes/footer.html
+OUTPUT /Users/clippert/Source/StatisticalGenomics/_includes/footer.log

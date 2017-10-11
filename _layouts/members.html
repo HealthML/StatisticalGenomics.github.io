@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="members">
+
+  
+
+  <h1 class="page-heading">Group Members</h1>
+  
+  <ul class="post-list">
+    {% for member in site.posts %}
+      <li>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        
+          <a style="{% if page.url==member.url %}color:red;{% endif %}" href="{{ member.url | relative_url }}">{{ member.title | escape }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+
+
+{{ content }}
+
+</div>
