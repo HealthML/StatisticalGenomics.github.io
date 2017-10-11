@@ -1,1 +1,12 @@
  <a class="site-title" href="https://www.mdc-berlin.de/bimsb"><img src="/assets/img/bimsb_small.png" vspace="5" hspace="5" align="middle"></a>  <a class="site-title"> &nbsp; </a> 
+
+
+           {% for path in page_paths %}
+            {% assign my_page = site.pages | where: "path", path | first %}
+            {% if my_page.title %}
+            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {% endif %}
+          {% endfor %}
+    {% if item.subitems and navurl contains item.url %}
+        {% include nav.html nav=item.subitems %}
+    {% endif %}

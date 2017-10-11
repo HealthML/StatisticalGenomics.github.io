@@ -1,25 +1,34 @@
 ---
 layout: default
+
+group-members:
+  -
+    name: Christoph Lippert
+    title: Group Leader
+    url: "/members/christoph-lippert.html"
+  -
+    name: Birgit Cloos
+    title: Administrative Assistant
+    url: "/members/birgit-cloos.html"
+  -
+    name: Remo Monti
+    title: PhD Student
+    url: "/members/remo-monti.html"
 ---
 
 <div class="members">
 
-  
-
-  <h1 class="page-heading">Group Members</h1>
-  
-  <ul class="post-list">
-    {% for member in site.posts %}
+  <a href="/members/"><h1 class="page-heading">Group Members</h1></a>
+  <ul>
+    {% for member in layout.group-members %}
       <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        
-          <a style="{% if page.url==member.url %}color:red;{% endif %}" href="{{ member.url | relative_url }}">{{ member.title | escape }}</a>
+          <a style="{% if page.url==member.url %}color:red;{% endif %}" href="{{ member.url | relative_url }}">{{ member.name | escape }}</a> ({{member.title}})
+
+          {% if page.url==member.url %}
+            {{ content }}
+          {% endif %}
       </li>
     {% endfor %}
   </ul>
-
-
-
-{{ content }}
 
 </div>
