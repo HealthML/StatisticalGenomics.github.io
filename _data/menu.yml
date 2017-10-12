@@ -1,10 +1,8 @@
-- text: Home
-  url: /
 - text: Group Members
   url: /members/
   subitems:
     - text: Christoph Lippert
-      url: /members/christoph-lippert/  
+      url: /members/christoph-lippert/
     - text: Birgit Cloos
       url: /members/birgit-cloos/
     - text: Remo Monti
@@ -13,3 +11,5 @@
   url: /projects/
 - text: Publications
   url: https://scholar.google.com/citations?user=RVl8TE0AAAAJ
+  target: "_blank"
+  image: <img src="/assets/img/google_scholar.png" height="17" width="17" align="middle">

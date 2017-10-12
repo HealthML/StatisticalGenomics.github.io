@@ -1,11 +1,11 @@
 {% assign navurl = page.url | remove: 'index.html' %}
 
 {% for item in include.nav %}
-        <a class="page-link" href="{{ item.url }}">
+        <a class="page-link" {% if item.target %} target=item.target {% endif %} href="{{ item.url }}">
             {% if item.url == navurl %}
-                <b>{{ item.text }}</b>
+                <b> {% if item.image %}{{item.image}}{% endif %}{{ item.text }}</b>
             {% else %}
-                {{ item.text }}
+                {% if item.image %}{{item.image}}{% endif %}{{ item.text }}
             {% endif %}
         </a>
 {% endfor %}
