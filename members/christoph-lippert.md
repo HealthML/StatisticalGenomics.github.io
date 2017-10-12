@@ -6,4 +6,4 @@ author: "Christoph Lippert"
 ---
 
 
-<img src="/assets/img/Christoph_Lippert_portrait_small.jpg" alt="Christoph Lippert" style="width: 150px;"/>
+<img style="width: 150px;" src="/assets/img/Christoph_Lippert_portrait_small.jpg" alt="Christoph Lippert"/>
